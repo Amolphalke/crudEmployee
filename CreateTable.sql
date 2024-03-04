@@ -1,6 +1,6 @@
-IF NOT EXISTS (SELECT name FROM master.dbo.sysdatabases WHERE name = 'YourDatabaseName')
+IF NOT EXISTS (SELECT name FROM master.dbo.sysdatabases WHERE name = 'UNIQUE_Example')
 BEGIN
-    CREATE DATABASE YourDatabaseName;
+    CREATE DATABASE UNIQUE_Example;
 END
 
   IF NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA = 'dbo' AND TABLE_NAME = 'Employees')
