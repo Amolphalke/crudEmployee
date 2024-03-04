@@ -1,3 +1,7 @@
+IF NOT EXISTS (SELECT name FROM master.dbo.sysdatabases WHERE name = 'YourDatabaseName')
+BEGIN
+    CREATE DATABASE YourDatabaseName;
+END
 
   IF NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA = 'dbo' AND TABLE_NAME = 'Employees')
 BEGIN
